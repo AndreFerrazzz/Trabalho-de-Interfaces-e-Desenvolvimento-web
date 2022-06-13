@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Primeiros socorros</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="home.css">
+    <script src="dbnoticias.js"></script>
+</head>
+<body>
+    <header class="container header">
+       <div class="row">
+            <div class="col-12 header_area">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-2">
+                <img src="img/logo.png" class="logo">
+                     </div>
+                     
+                     <div class="col-12 col-sm-12 col-md-8 col-lg-10 menu_area">
+                <nav class="nav nav-pills flex-column flex-sm-row">
+                    <a class="flex-sm-fill text-sm-center nav-link active" href="#">Home</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="home.html">Login</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="register.html">Cadastro</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="#">Conteúdo</a>
+                  </nav>
+                </div>
+    
+            </div> 
+            
+        </div>
+    </header>
+    <main class="container main">
+        <div class="row main">
+            <div">
+                <img src="img/gif principal.gif" class="gif_main">
+                <img src="img/escrito.jpg" class="escrito_main">
+            </div>
+        </div>
+        <div class="row cards">
+            <div class="card mb-3" id="card1" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="image1.svg" style="width: 125%"  id="image1.svg">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body" id="subtitulo-alinhado">
+                      <h5 class="card-title" >Conteúdo Gratuito</h5>
+                      <p class="card-text">Aprenda como e quando fazer a manobra de Heimlich e como lidar com crianças e idosos nessa situação</p>
+                      <button type="button" class="btn btn-dark " id="btn-plano">Acessar conteúdo</button>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" id="card2" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="image2.svg" style="width: 125%"  id="image2.svg">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body" id="subtitulo-alinhado">
+                      <h5 class="card-title" >Conteúdo Gratuito</h5>
+                      <p class="card-text">Você sabe quais são as melhores práticas e quando deve ligar para o SAMU quando um idoso se queima?</p>
+                      <button type="button" class="btn btn-dark" id="btn-plano">Acessar conteúdo</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+      <div class="noticias">
+        <h1>Notícias</h1>
+        <div id="lista-produtos"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6" id="plano1">
+          <div class="card">
+            <div class="card-body" id="subtitulo-plano">
+              <h5 class="card-title" >Plano individual</h5>
+              <p class="card-text">Disponível para aqueles que tem contato com idosos/crianças no ambiente de trabalho ou em casa e desejam aprender mais sobre primeiros socorros.</p>
+              
+              <img src="image3.svg" width="80%">
+              <a href="register.html" class="btn btn-dark" id="btn-plano">Fazer cadastro</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6" id="plano2">
+          <div class="card">
+            <div class="card-body" id="subtitulo-plano">
+              <h5 class="card-title">Plano empresarial</h5>
+              <p class="card-text">Para empresas que desejam oferecer cursos profissionalizantes para seus funcionários, exceto os da área da saúde. Importante para ambientes vulneráveis a acidentes com crianças/idosos.</p>
+              <img src="image4.svg" width="80%">
+              <a href="register.html" class="btn btn-dark" id="btn-plano" >Fazer cadastro</a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+                                                                
+     <footer>
+            <div class="row">
+                <div class="col-12 footer_area">
+                   Portal Primeiros Socorros - Todos os direitos reservados - 2022
+                </div>
+            </div>
+          </footer>
+
+          <script>
+            var prods = '';
+            for (i=0; i < db.dados.length; i++) {
+                prods += `<p class="produto-item"><b>${i+1}.  ${ db.dados[i].titulo } - ${db.dados[i].datas}</b> <br> ${db.dados[i].corpo} </p>`;
+            }
+            document.getElementById('lista-produtos').innerHTML = prods;
+        
+        </script>
+</body>
+
+</html>

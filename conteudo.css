@@ -1,0 +1,58 @@
+/* MENU */
+.header{
+    background: rgb(0, 0, 0);
+    margin-bottom: 30px;
+}
+.logo{
+    width: 70px;
+    margin-left: 10px;
+}
+.menu_area{
+    margin-top: 20px;
+}
+.menu_area nav a{
+    background-color: rgba(97, 85, 85, 0.466);
+    color: white;
+}
+.menu_area nav a:hover{
+    background-color: rgb(54, 110, 230);
+    
+}
+.active > header{
+    background-color: rgba(73, 39, 95, 0.664) !important;
+}
+.header_area{
+    padding: 20px;
+}
+body {
+background: linear-gradient(#000000, #9f8888);
+}
+#titulo h1, p{
+    color: white;
+}
+
+/*  CARDS */
+p{
+    color:#000000;
+}
+/*footer*/
+.footer{
+    margin-top:20px;
+    background: rgb(0, 0, 0) ; 
+    color: white;
+}
+
+.footer_area{
+    padding: 20px;
+    text-align: center;
+}
+
+
+@media screen and (max-width:700px){
+.card-body{
+    margin-left: 10px;
+}
+.header{
+    margin-bottom: 10px;
+}
+}

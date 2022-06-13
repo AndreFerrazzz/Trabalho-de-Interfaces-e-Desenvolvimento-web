@@ -1,0 +1,98 @@
+/* MENU */
+.header{
+    background: rgb(0, 0, 0);
+    margin-bottom: 30px;
+}
+.logo{
+    width: 70px;
+    margin-left: 10px;
+}
+.menu_area{
+    margin-top: 20px;
+}
+.menu_area nav a{
+    background-color: rgba(97, 85, 85, 0.466);
+    color: white;
+}
+.menu_area nav a:hover{
+    background-color: rgb(54, 110, 230);
+}
+.active > header{
+    background-color: rgba(73, 39, 95, 0.664) !important;
+}
+.header_area{
+    padding: 20px;
+}
+
+/* MAIN */
+.gif_main{
+    padding: 20px;
+}
+
+/* CARDS */
+.cards{
+    padding: 10px;
+    margin-top: 60px;
+}
+
+#card1{
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.image1{
+    width:190px;
+}
+
+#card2{
+    padding: 10px;
+    margin-left: 10px;
+}
+
+/* PLANOS */
+
+.planos{
+    padding: 10px;
+    margin-top: 60px;
+    border: none;
+    display: inline;
+}
+ .gif_plano{
+   padding:10px;
+   margin-left: 10px;
+ }
+
+.card_planos{
+  margin: 10px;
+}
+
+/* FOOTER */
+
+/*footer*/
+.footer{
+    margin-top:20px;
+    background: rgb(0, 0, 0);
+    color: white;
+}
+
+.footer_area{
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
+@media screen and (max-width:700px){
+    .gif_main {
+        display: none;
+    }
+    .escrito_main{
+        width: 97%;
+    }
+    .img_engasgo, .img_queimadura{
+        width: 0px;
+    }
+    
+    
+}
